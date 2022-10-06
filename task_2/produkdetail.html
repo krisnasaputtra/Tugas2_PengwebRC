@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes | Detail Produk</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Poppins, 'sans-serif';
+            background-image: linear-gradient(to left, #1B75D8, #150D60);
+            color: beige;
+        }
+
+        .container-detail {
+            max-width: 800px;
+            min-height: fit-content;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .back {
+            position: absolute;
+            top: 10px;
+            left: 3;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .tabel-pesanan {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .judul-detail {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .tabel-pesanan th,
+        .tabel-pesanan td {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-detail">
+        <table class="tabel-pesanan">
+            <h1 class="judul-detail"> Detail Produk Pesanan </h1>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama Pemesan</th>
+                    <th>Merek Sepatu</th>
+                    <th>Ukuran Sepatu</th>
+                    <th>Harga total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Gus Samsudin</td>
+                    <td>Nike</td>
+                    <td>43</td>
+                    <td>5000000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Udin Nganga</td>
+                    <td>Adidas</td>
+                    <td>40</td>
+                    <td>8000000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Joko Anwar</td>
+                    <td>Air Jordan</td>
+                    <td>42</td>
+                    <td>10000000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Krisna Saputra</td>
+                    <td>Air Jordan</td>
+                    <td>44</td>
+                    <td>10000000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lani yarn</td>
+                    <td>Kava</td>
+                    <td>38</td>
+                    <td>6000000</td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="back" href="index.html">⬅️</a>
+    </div>
+</body>
+
+</html>

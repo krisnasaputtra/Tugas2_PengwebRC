@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes | Produk</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Poppins, 'sans-serif';
+            background-image: linear-gradient(to left, #1B75D8, #150D60);
+            color: azure;
+        }
+
+        .container-produk {
+            max-width: 600px;
+            min-height: 80vh;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-produk {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .form-produk>h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .form-produk>label {
+            margin-bottom: 5px;
+        }
+
+        .form-produk>input {
+            margin-bottom: 10px;
+            height: 30px;
+            font-size: 15px;
+            outline: none;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            padding: 0 8px;
+        }
+
+        .form-produk>button {
+            max-width: fit-content;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            background-color: rgba(129, 42, 215, 0.5);
+            cursor: pointer;
+            transition: 0.5s;
+            color: azure;
+        }
+
+        .form-produk>button:hover {
+            background-color: rgba(129, 42, 215, 1);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-produk">
+        <form class="form-produk" action="produkdetail.html" method="get">
+            <h1>Shoes</h1>
+            <label for="nama_pemesan">Nama pemesan</label>
+            <input type="text" name="nama_pemesan" id="nama_pemesan">
+            <label for="merk">Merk Sepatu</label>
+            <input type="text" name="merk" id="merk">
+            <label for="ukuran">Ukuran</label>
+            <input type="number" name="ukuran" id="ukuran">
+            <label for="harga_total">Harga total</label>
+            <input type="number" name="harga_total" id="harga_total">
+            <button type="submit">Order</button>
+        </form>
+    </div>
+</body>
+
+</html>
